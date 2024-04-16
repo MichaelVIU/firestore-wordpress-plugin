@@ -1,0 +1,22 @@
+{
+    "name": "promptmate/firestore-simple",
+    "description": "Simple Wordpressplugin to use Firestore in Templates",
+    "require": {
+        "google/cloud-firestore": "^1.43"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.1"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Promptmate\\FirestoreSimple\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "michael",
+            "email": "michael@searchviu.com"
+        }
+    ]
+}
