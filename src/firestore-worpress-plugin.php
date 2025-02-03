@@ -83,7 +83,8 @@ function decrypt_data($data) {
 function get_firestore_instance() {
     $credentials = json_decode(decrypt_data(get_option('firestore_credentials')), true);
     $firestore = new Google\Cloud\Firestore\FirestoreClient([
-        'keyFilePath' => $credentials
+        'projectId' => $credentials['project_id'],
+        'credentials' => $credentials
     ]);
     return $firestore;
 }
